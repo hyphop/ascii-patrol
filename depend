@@ -1,0 +1,20 @@
+
+manual.o: manual.cpp manual.h game.h assets.h spec.h
+mo3.o: mo3.cpp
+unmo3.o: unmo3.cpp unmo3.h spec.h
+stb_vorbis.o: stb_vorbis.cpp spec.h
+conf.o: conf.cpp conf.h spec.h menu.h
+gameover.o: gameover.cpp assets.h spec.h gameover.h game.h twister.h \
+ unmo3.h
+inter.o: inter.cpp inter.h game.h assets.h spec.h twister.h conf.h \
+ unmo3.h
+twister.o: twister.cpp twister.h
+game.o: game.cpp twister.h game.h assets.h spec.h conf.h manual.h unmo3.h
+temp.o: temp.cpp twister.h inter.h game.h assets.h spec.h gameover.h \
+ menu.h conf.h manual.h unmo3.h
+menu.o: menu.cpp game.h assets.h spec.h menu.h conf.h twister.h
+assets.o: assets.cpp assets.h
+spec_dos.o: spec_dos.cpp
+spec_win.o: spec_win.cpp
+spec_nix.o: spec_nix.cpp spec.h conf.h menu.h
+spec_web.o: spec_web.cpp

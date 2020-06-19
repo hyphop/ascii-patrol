@@ -1,7 +1,8 @@
-CXX      = g++
-CXXFLAGS = -Wno-multichar -O3 -D NIX
-LD       = g++
-LDFLAGS  = -pthread
+#CXX      = g++
+CXXFLAGS += -Wno-multichar -D NIX
+#CXXFLAGS += -Wno-multichar -O3 -D NIX
+LD       = $(CXX)
+LDFLAGS  += -pthread
 #LIBS     = -L/usr/X11/lib -lX11 -lXi -lpulse
 OBJS     = manual.o mo3.o unmo3.o stb_vorbis.o conf.o gameover.o inter.o \
            twister.o game.o temp.o menu.o assets.o spec_dos.o spec_win.o \
