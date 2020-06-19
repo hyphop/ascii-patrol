@@ -19,9 +19,5 @@ g++ \
 	spec_win.cpp \
 	spec_nix.cpp \
 	spec_web.cpp \
-	-L/usr/X11/lib \
-	-lX11 \
-	-lXi \
-	-lpulse \
 	-o asciipat
 
